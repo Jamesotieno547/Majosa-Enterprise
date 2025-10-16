@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAJOSA ENTERPRISE</title>
+  <meta name="description" content="MAJOSA ENTERPRISE provides printing, branding, IT, and general supply solutions.">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="logo.png" />s
+</head>
+<body>
+
+  <!-- 🌐 Navigation -->
+  <header>
+    <div class="container">
+      <div class="logo">MAJOSA<span> ENTERPRISE</span></div>
+      <button id="nav-toggle">☰</button>
+      <nav id="nav">
+        <ul>
+          <li><a href="#home">🏠 Home</a></li>
+          <li><a href="#about">🧑‍💼 About</a></li>
+          <li><a href="#services">🧰 Services</a></li>
+          <li><a href="#portfolio">🖼️ Portfolio</a></li>
+          <li><a href="#blog">📰 Blog</a></li>
+          <li><a href="#contact">📞 Contact</a></li>
+          <li><a href="#store">🛒 Store</a></li>
+          <li><a href="admin.html">👤 Login / Admin</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 🏠 Home -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to <span>MAJOSA ENTERPRISE</span></h1>
+      <p>Your all-in-one partner for printing, IT, and branding excellence.</p>
+      <a href="#contact" class="btn">Get In Touch</a>
+    </div>
+  </section>
+
+  <!-- 🧑‍💼 About -->
+
+  <div class="profile-container">
+  <img src="images/passport.jpg" alt="JAMES OTIENO AKETCH" class="profile-image">
+</div>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>MAJOSA ENTERPRISE delivers professional printing, branding, and IT services across Kenya. 
+      We focus on quality, creativity, and reliability to help your business stand out.</p>
+  </section>
+
+  <!-- 🧰 Services (Updated) -->
+  <section id="services">
+    <h2>💻 Web Design & Cyber Services</h2>
+    <p>We design responsive, modern, and professional websites that help businesses grow online. Our cyber and networking services include CCTV installation, computer sales and setup, system maintenance, and IT support to ensure clients stay secure and connected.</p>
+
+    <div class="service-cards">
+      <div class="service-card">
+        <h3>🖌️ Graphic Design</h3>
+        <p>Creating stunning visuals, logos, business cards, flyers, and branding materials that make your business stand out.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>🎬 Video Editing & Transcription</h3>
+        <p>Professional video editing, transcription, and media preparation services to enhance your content and storytelling.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>💾 Data Entry & Software Development</h3>
+        <p>Efficient data entry solutions and custom software development for business automation and productivity.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>🛍️ E-Commerce & POS Systems</h3>
+        <p>Setup of online stores, Point-of-Sale systems, and seamless integration for your retail or online business.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>🖥️ IT Support & Networking</h3>
+        <p>Networking solutions, computer installation, system maintenance, and continuous IT support for smooth operations.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>🛠️ General Supplies & Equipment</h3>
+        <p>Supply of stationeries, lab machines, office equipment, taps, racks, and other essential business tools.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🖼️ Portfolio -->
+  <section id="portfolio">
+    <h2>Portfolio / Projects</h2>
+    <div id="portfolio-grid" class="grid">
+      <div class="project-card">
+        <img src="https://via.placeholder.com/400x250?text=Sample+Project" alt="Sample Project" />
+        <h4>Sample Project</h4>
+        <p>Our work speaks for itself — quality and precision in every detail.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 📰 Blog -->
+  <section id="blog">
+    <h2>Blog / News</h2>
+    <p>Coming soon — stay tuned for updates and insights from our team.</p>
+  </section>
+
+  <!-- 📞 Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" id="c-name" placeholder="Your Name" required />
+      <input type="email" id="c-email" placeholder="Your Email" required />
+      <input type="tel" id="c-phone" placeholder="Your Phone" required />
+      <textarea id="c-message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <div class="socials">
+      <a href="#" title="Facebook">🌐</a>
+      <a href="#" title="Twitter">🐦</a>
+      <a href="#" title="Instagram">📸</a>
+      <a href="#" title="LinkedIn">💼</a>
+      <a href="#" title="Whatsapp">📱</a>
+    </div>
+  </section>
+
+  <!-- 🛒 Store -->
+  <section id="store">
+    <h2>Online Store</h2>
+    <p>Our e-commerce section is under development. Soon you’ll be able to order directly.</p>
+  </section>
+
+  <!-- ⚖️ Footer -->
+  <footer>
+    <p>© <span id="year"></span> MAJOSA ENTERPRISE. All Rights Reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+<!-- Scroll Buttons -->
+<button id="scrollTop" class="scroll-btn">↑ Top</button>
+<button id="scrollBottom" class="scroll-btn">↓ Bottom</button>
+
+<script>
+  // Scroll to Top
+  document.getElementById("scrollTop").addEventListener("click", function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // Scroll to Bottom
+  document.getElementById("scrollBottom").addEventListener("click", function() {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+  });
+</script>
+
+</body>
+</html>

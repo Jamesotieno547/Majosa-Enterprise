@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard | MAJOSA ENTERPRISE</title>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+
+  <!-- 🔐 Login Section -->
+  <div id="login-section" class="login-container">
+    <h2>Admin Login</h2>
+    <form id="login-form">
+      <input type="text" id="admin-username" placeholder="Enter Username" required />
+      <div class="password-wrapper">
+        <input type="password" id="admin-password" placeholder="Enter Password" required />
+        <span id="togglePassword">👁️</span>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+    <p id="login-error" style="color:red;"></p>
+  </div>
+
+  <!-- 🧰 Dashboard Section -->
+  <div id="dashboard" class="hidden dashboard-container">
+
+    <!-- Top Header -->
+    <header class="dashboard-header">
+      <h1>MAJOSA Dashboard</h1>
+      <button id="logout-btn" class="logout-btn">Logout</button>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="admin-nav">
+      <ul>
+        <li><a href="#">🏠 Home</a></li>
+        <li><a href="#">🧑‍💼 About</a></li>
+        <li><a href="#">🧰 Services</a></li>
+        <li><a href="#">🖼️ Portfolio</a></li>
+        <li><a href="#">📰 Blog</a></li>
+        <li><a href="#">📞 Contact</a></li>
+        <li><a href="#">🛒 Store</a></li>
+      </ul>
+    </nav>
+
+    <!-- Quick Stats -->
+    <section class="stats">
+      <div class="stat-card">
+        <h3 id="projectCount">0</h3>
+        <p>Projects</p>
+      </div>
+      <div class="stat-card">
+        <h3 id="messageCount">0</h3>
+        <p>Messages</p>
+      </div>
+      <div class="stat-card">
+        <h3 id="userCount">0</h3>
+        <p>Users</p>
+      </div>
+    </section>
+
+    <!-- 🖼️ Add / Edit Project Form -->
+    <section class="add-project panel">
+      <h2 id="formTitle">Add New Project</h2>
+      <form id="projectForm">
+        <input type="text" id="p-title" placeholder="Project Title" required />
+        <input type="url" id="p-image" placeholder="Image URL" required />
+        <textarea id="p-desc" placeholder="Short Description" required></textarea>
+        <button type="submit" id="submitProject">Add Project</button>
+        <button type="button" id="cancelEdit" style="display:none;">Cancel Edit</button>
+      </form>
+    </section>
+
+    <!-- 📁 Projects List -->
+    <section class="panel">
+      <h2>All Projects</h2>
+      <div id="project-list" class="grid"></div>
+    </section>
+
+    <!-- 📬 Messages List -->
+    <section class="panel">
+      <h2>Contact Messages</h2>
+      <div id="message-list"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© <span id="year"></span> MAJOSA ENTERPRISE. All Rights Reserved.</p>
+    </footer>
+  </div>
+
+  <!-- Scroll Buttons -->
+  <button id="scrollTopBtn" class="scroll-btn">⬆</button>
+  <button id="scrollBottomBtn" class="scroll-btn">⬇</button>
+
+  <script src="admin.js"></script>
+</body>
+</html>
